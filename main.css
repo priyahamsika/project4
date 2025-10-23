@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eebc83;
+  
+}
+
+/* Flex utility classes */
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #ffcc70;
+  padding: 15px 30px;
+  align-items: center;
+}
+nav img {
+  vertical-align: middle;
+}
+#cart {
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+/* Header section */
+header {
+  background-color: #ffeaa7;
+  padding: 40px 20px;
+  text-align: center;
+}
+.header-text {
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  margin: 5px 0;
+  font-size: 2.5em;
+  color: #333;
+}
+header h5 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Books section */
+.section-container {
+  padding: 40px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+.container {
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual book card */
+.container > div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+.books {
+  border-radius: 4px;
+}
+h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+  color: #444;
+}
+h4 {
+  margin: 0;
+  font-size: 0.95em;
+  font-style: italic;
+  color: #777;
+}
+.buy {
+  margin-top: 10px;
+  align-items: center;
+}
+.buy p {
+  font-weight: bold;
+  color: #e17055;
+}
+.button {
+  background-color: #74b9ff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+}
+.button:hover {
+  background-color: #0984e3;
+}
+.button h6 {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* 📱 Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .section h2 {
+    font-size: 1.5em;
+  }
+
+  .container > div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+    background-color: #e17055;
+  }
+
+  header h5 {
+    font-size: 1em;
+  }
+
+  .section-container {
+    padding: 20px;
+  }
+
+  .container > div {
+    width: 90%;
+  }
+
+  .button {
+    padding: 4px 8px;
+    font-size: 0.8em;
+  }
+
+  .button h6 {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 580px) {
+    body{
+     background-color:#ffeaa7 ;
+     flex-wrap: wrap;
+}
+    }
